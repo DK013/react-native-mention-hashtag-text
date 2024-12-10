@@ -4,27 +4,9 @@
 
     npm i react-native-mention-hashtag-text
 
-# Usage
+# Install for Expo
 
-    import  MentionHashtagTextView  from  "react-native-mention-hashtag-text";
-
-    const mentionHashtagClick = (text) => {
-        console.log("Clicked to + " + text);
-    };
-
-    <MentionHashtagTextView
-        mentionHashtagPress={mentionHashtagClick}
-        mentionHashtagColor={"#ff0000"}
-        >
-        This is a text with a @mention and #hashtag. You can add more @mentions like @john @foe or #hashtags like #ReactNative
-    </MentionHashtagTextView>
-
-## Props
-
-| Props               | Params                | Description                                                       |
-| ------------------- | --------------------- | ----------------------------------------------------------------- |
-| mentionHashtagPress | (void) (string) => {} | Triggered when user clicked a hashtag or mention.                 |
-| mentionHashtagColor | (String) Color        | Mention and hashtag color. Uses #0384BE (light blue) for default. |
+    npx expo install react-native-mention-hashtag-text
 
 # Usage
 
@@ -39,10 +21,16 @@
 
 ## Props
 
-| Props               | Params                | Description                                                       |
-| ------------------- | --------------------- | ----------------------------------------------------------------- |
-| mentionHashtagPress | (void) (string) => {} | Triggered when user clicked a hashtag or mention.                 |
-| mentionHashtagColor | (String) Color        | Mention and hashtag color. Uses #0384BE (light blue) for default. |
+| Prop               | Type                    | Default     | Description                                                       |
+|--------------------| ------------------------| ------------| ------------------------------------------------------------------|
+| children (Required)          | string                  | -           | Text content or component containing @mentions and #hashtags      |
+| mentionHashtagPress| (text: string) => void  | () => {}    | Callback triggered when a mention or hashtag is pressed            |
+| mentionHashtagColor| string                  | "black"     | Color for mentions and hashtags                                   |
+| style              | TextStyle               | {}          | Style object for the text component                               |
+| onPress            | () => void              | () => {}    | Callback for when the text is pressed                              |
+| numberOfLines      | number                  | 0           | Number of lines to show (0 means no limit)                        |
+| ellipsizeMode      | "head" \| "middle" \| "tail" \| "clip" | "tail"  | How text should be truncated                           |
+| className          | string                  | ""          | Additional class name for styling                                 |
 
 ## License
 

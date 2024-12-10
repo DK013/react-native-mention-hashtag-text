@@ -1,24 +1,48 @@
 {
-  "name": "react-native-mention-hashtag-text",
-  "version": "1.0.2",
-  "description": "A react native text component for highlighted mentions and hashtags similar to instagram. Mentions and hashtags are also clickable.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uzaysan/react-native-mention-hashtag-text.git"
-  },
-  "keywords": [
-    "react-native",
-    "hashtag",
-    "mention"
-  ],
-  "author": "uzaysan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/uzaysan/react-native-mention-hashtag-text/issues"
-  },
-  "homepage": "https://github.com/uzaysan/react-native-mention-hashtag-text#readme"
+	"name": "react-native-mention-hashtag-text",
+	"version": "1.0.2",
+	"description": "A react native text component for highlighted mentions and hashtags similar to instagram. Mentions and hashtags are also clickable.",
+	"main": "index.tsx",
+	"types": "index.d.ts",
+	"scripts": {
+		"build": "tsc -p .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/uzaysan/react-native-mention-hashtag-text.git"
+	},
+	"peerDependencies": {
+		"expo": ">=46.0.9",
+		"react": "*",
+		"react-native": "*"
+	},
+	"peerDependenciesMeta": {
+		"expo": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@babel/core": ">=7.12.9",
+		"@types/react": ">=18.3.12",
+		"@types/react-native": ">=0.73.0",
+		"typescript": ">=5.7.2"
+	},
+	"keywords": [
+		"react-native",
+		"hashtag",
+		"mention"
+	],
+	"author": "uzaysan",
+	"contributors": [
+		{
+			"name": "Deep Chakraborty",
+			"url": "https://github.com/dk013"
+		}
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/uzaysan/react-native-mention-hashtag-text/issues"
+	},
+	"homepage": "https://github.com/uzaysan/react-native-mention-hashtag-text#readme"
 }
